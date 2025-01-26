@@ -19,9 +19,9 @@ A minimal Go webserver built with the **Gin** framework for analyzing go's perfo
    ```bash
    go run main.go
    ```
-3. The server will be running on 14080 port and a log message as shown below should be printed on the console
+3. The server will be running on 8080 port and a log message as shown below should be printed on the console
     ```txt
-    [GIN-debug] Listening and serving HTTP on localhost:14080
+    [GIN-debug] Listening and serving HTTP on localhost:8080
     ```
 ---
 
@@ -33,7 +33,7 @@ This parses a json with the below requests structure, logs the graphName from th
 curl --header "Content-Type: application/json" \
   --request POST \
   --data '{"graphName":"xyz"}' \
-  http://localhost:14080/test
+  http://localhost:8080/test
 ```
 
 Response example:
@@ -147,10 +147,6 @@ running (0h11m50.1s), 00/50 VUs, 10000000 complete and 0 interrupted iterations
 default ✓ [======================================] 50 VUs  0h11m50.1s/1h0m0s  10000000/10000000 shared iters
 ```
 
----
-
-## **Commands**
-- **Run the webserver**: `go run main.go`
 ---
 
 ## **License**

@@ -160,19 +160,8 @@ default ✓ [======================================] 50 VUs  0h46m48.9s/1h0m0s  
 .
 ├── server.js           # Core server configuration
 ├── package.json        # Dependencies and scripts
-├── test/               # Performance test scripts
-│   └── test.js         # k6 test script
 └── .gitignore          # Excludes node_modules and logs
 ```
-
----
-
-## **Commands**
-- **Start the server**: `node server.js`
-- **Run performance tests**: 
-  ```bash
-  cd test && k6 run test.js
-  ```
 
 ---
 
