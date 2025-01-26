@@ -2,7 +2,12 @@
 
 This repository contains simple web servers written in **Go (Gin)**, **Rust**, **Node.js (Express)**, **TypeScript (Express)**, and **Python (FastAPI)**. Each server performs the same task:
 
-1. Accepts a JSON request with the format `{"graphName": "xyz"}`.
+1. Accepts a JSON request with the format 
+```json
+{
+    "graphName": "xyz"
+}
+```
 2. Parses the JSON and prints the `graphName`.
 3. Returns the same JSON as the response.
 
