@@ -43,9 +43,18 @@ Response example:
 }
 ```
 
-### **k6 performance test**
-#### Performance Result on Mac Book Pro 2018 x86 Model 16GB RAM and 12 Cores
-##### 1M Requests 
+## **k6 Performance Test**
+#### **Test Environment**: MacBook Pro 2018 x86 Model, 16GB RAM, 12 Cores
+#### **Configuration**:
+- 50 Virtual Users (VUs)
+- 1-hour max duration
+
+### **1 Million Requests**
+```bash
+k6 run -u 50 -i 1000000 --duration 1h --tag testname=million_request_test test.js
+```
+
+**Results**:
 ```
 thehellmaker@thehellmakers-MacBook-Pro test %  k6 run -u 50 -i 1000000 --duration 1h --tag testname=million_request_test test.js
 
@@ -89,7 +98,12 @@ running (0h01m11.3s), 00/50 VUs, 1000000 complete and 0 interrupted iterations
 default ✓ [======================================] 50 VUs  0h01m11.3s/1h0m0s  1000000/1000000 shared iters
 ```
 
-##### 10M Requests 
+### **10 Million Requests**
+```bash
+k6 run -u 50 -i 10000000 --duration 1h --tag testname=ten_million_request_test test.js
+```
+
+**Results**:
 ```
 thehellmaker@thehellmakers-MacBook-Pro test %  k6 run -u 50 -i 10000000 --duration 1h --tag testname=million_request_test test.js
 
