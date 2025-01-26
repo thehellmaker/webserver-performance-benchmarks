@@ -1,4 +1,3 @@
-```markdown
 # **FastAPI WebServer Performance Monitoring**
 
 A minimal Python webserver built with **FastAPI** behind **Uvicorn** for analyzing server performance. Exposes a simple API endpoint `/test`.
